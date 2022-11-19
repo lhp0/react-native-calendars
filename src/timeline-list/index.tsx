@@ -121,7 +121,7 @@ const TimelineList = (props: TimelineListProps) => {
         events: flatten(dropRight(weekEvents, numberOfDaysToDrop)),
         scrollToNow: _isToday && isInitialPage && scrollToNow,
         initialTime: !_isToday && isInitialPage ? initialTime : undefined,
-        scrollToFirst: !_isToday && isInitialPage && scrollToFirst,
+        scrollToFirst: !_isToday && scrollToFirst,
         scrollOffset: timelineOffset,
         onChangeOffset: onTimelineOffsetChange,
         showNowIndicator: _isToday && showNowIndicator,
